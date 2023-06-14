@@ -1,0 +1,126 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #1a1616;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  header .logo {
+    max-width: 100%;
+  }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+#header {
+  background: #6B8E23;
+  width: 100%;
+  position: relative;
+}
+#header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.logo {
+  float: left;
+}
+
+nav {
+  float: right; 
+}
+nav li {
+  list-style: none;
+  float: left;
+}
+nav li a {
+  float: left;
+  padding: 35px;
+}
+nav li a:hover {
+  background: #ea7891;
+}
+
+#menu-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -12px;
+  margin-right: 30px;
+  display: none;
+}
+#menu-icon span {
+  border: 2px solid #fff;
+  width: 30px;
+  margin-bottom: 5px;
+  display: block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.1s;
+}
+@media only screen and (max-width: 1170px) {
+  nav > li > a {
+    padding: 35px 15px;
+  }
+  header .logo {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  nav {
+    display: block !important;
+  }
+  header .logo {
+    max-width: 60%;
+  }
+}
+@media only screen and (max-width: 959px) {
+  nav {
+    display: none;
+    width: 100%;
+    clear: both;
+    float: none;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  header .logo {
+    max-width: 50%;
+  }
+  #menu-icon {
+    display: inline;
+    top: 45px;
+    cursor: pointer;
+  }
+  #menu-icon.active .first {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: 10px;
+  }
+  #menu-icon.active .second {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: relative;
+    top: -9px;
+  }
+  #menu-icon.active .third {
+    display: none;
+  }
+  nav {
+    padding: 10px;
+  }
+  nav li {
+    float: none;
+  }
+  nav li a {
+    float: none;
+    padding: 8px;
+    display: block;
+  }
+  #header nav a {
+    color: #fff;
+    padding: 8px;
+  }
+}

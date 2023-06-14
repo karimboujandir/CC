@@ -1,0 +1,229 @@
+body,
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #16161a;
+}
+.george {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: absolute;
+  padding-top: 30vh;
+  margin: 13%auto 0; 
+}
+.george .pot_top {
+  width: 30vh;
+  height: 0;
+  border-top: 5vh solid #dd8740;
+  border-left: 0.9090909091vh solid transparent;
+  border-right: 0.9090909091vh solid transparent;
+}
+.george .pot_body {
+  width: 20vh;
+  height: 0;
+  border-top: 17vh solid #e5a26b;
+  border-left: 4vh solid transparent;
+  border-right: 4vh solid transparent;
+}
+.george .pot_plate {
+  width: 23vh;
+  height: 0;
+  border-top: 4vh solid #dd8740;
+  border-left: 0.8vh solid transparent;
+  border-right: 0.8vh solid transparent;
+}
+.george .george_flower {
+  position: absolute;
+  top: 0;
+  left: 11vh;
+  height: 6.6666666667vh;
+  width: 5vh;
+  border-radius: 0 100% 0 100%;
+  background-color: #e2641b;
+}
+.george .george_flower:before {
+  content: "";
+  top: 0;
+  left: 5vh;
+  transform: rotate(70deg);
+  position: absolute;
+  height: 6.6666666667vh;
+  width: 5vh;
+  border-radius: 0 100% 0 100%;
+  background-color: #e2641b;
+}
+.george .george_head {
+  position: absolute;
+  z-index: -1;
+  top: 6.6666666667vh;
+  left: 2vh;
+  height: 30vh;
+  width: 28vh;
+  background-color: #98d30c;
+  border-radius: 100%;
+}
+.george .george_head .line {
+  height: 30vh;
+  width: 1vh;
+  background-color: #ccf668;
+  position: absolute;
+  left: 13vh;
+}
+.george .george_head:before {
+  content: "";
+  display: block;
+  height: 30vh;
+  width: 20.7407407407vh;
+  border: solid 1vh #ccf668;
+  border-radius: 100%;
+  position: absolute;
+  left: 2.5vh;
+}
+.george .george_head:after {
+  content: "";
+  display: block;
+  height: 30vh;
+  width: 9.3333333333vh;
+  border: solid 1vh #ccf668;
+  border-radius: 100%;
+  position: absolute;
+  left: 8vh;
+}
+.george .george_head .eye {
+  height: 8vh;
+  width: 8vh;
+  position: absolute;
+  background-color: #464d5b;
+  border-radius: 100%;
+  z-index: 1;
+  top: 10vh;
+  left: 0;
+}
+.george .george_head .eye:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1.6666666667vh;
+  width: 1.6666666667vh;
+  background-color: #fff;
+  border-radius: 100%;
+  bottom: 1vh;
+  right: 1.6666666667vh;
+  animation: shimmer 0.25s infinite alternate;
+}
+.george .george_head .eye:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  background-color: #fff;
+  border-radius: 100%;
+  bottom: 2vh;
+  right: 2vh;
+  animation: shimmer 0.25s infinite alternate;
+}
+.george .george_head .eye:last-of-type {
+  left: 11.4285714286vh;
+}
+.george .george_head .cheek {
+  height: 2.5vh;
+  width: 5.7142857143vh;
+  border-radius: 60%;
+  background-color: #f2a4ca;
+  position: absolute;
+  top: 16.6666666667vh;
+  left: -2vh;
+  z-index: 5;
+}
+.george .george_head .cheek:after {
+  content: "";
+  height: 2.5vh;
+  width: 5.7142857143vh;
+  border-radius: 60%;
+  background-color: #f2a4ca;
+  position: absolute;
+  left: 17.3913043478vh;
+  z-index: 5;
+}
+.george .shadow {
+  height: 5vh;
+  width: 60vh;
+  position: absolute;
+  bottom: -2.5vh;
+  right: -15vh;
+  background-color: #464d5b;
+  opacity: 0.25;
+  border-radius: 100%;
+  z-index: -10;
+}
+@keyframes shimmer {
+  0% {
+    transform: translateX(-0.0666666667vh) translateY(0.0666666667vh);
+  }
+  50% {
+    transform: translateX(-0.0666666667vh) translateY(-0.0666666667vh);
+  }
+  100% {
+    transform: translateX(0.0666666667vh) translateY(0.0666666667vh);
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  color: #ccf668;
+}
+
+header .logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+header form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ea7891;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+header input[type="submit"]:hover {
+  background-color: #f2a4ca;
+}
+
+@media (min-width: 801px) {
+  .george {
+    margin: 45% auto 0;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .george {
+    margin: 90% auto 0;
+  }
+ 
+}

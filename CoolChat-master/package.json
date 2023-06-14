@@ -1,0 +1,19 @@
+{
+  "name": "chat-en-ligne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gekkode",
+  "license": "ISC",
+  "dependencies": {
+    "express-session": "^1.17.3",
+    "express-ws": "^5.0.2",
+    "mysql": "^2.18.1",
+    "ws": "^8.13.0"
+  }
+}

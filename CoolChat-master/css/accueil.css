@@ -1,0 +1,44 @@
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 13%auto 0; 
+}
+
+.container .texte {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container .texte h2 {
+  color: #ea7891;
+  font-size: 100px;
+}
+
+.container .texte p {
+  color: #6B8E23;
+  font-size: 40px;
+}
+
+.container .texte a {
+  font-size: 20px;
+  display: inline-block;
+  padding: 8px 20px;
+  color: snow;
+  background: #ea7891;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 959px) {
+  
+  .container .texte h2 {
+    color: #ea7891;
+    font-size: 50px;
+  }
+}
